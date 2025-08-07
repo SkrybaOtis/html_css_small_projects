@@ -1,0 +1,542 @@
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    position: relative;
+    min-width: 100%;
+    height: 100%;
+    
+    margin: 0;
+    border: 0;
+    padding: 0;
+
+    /*background: rgb(23, 41, 68);
+    color: white;*/
+
+    color: black;
+}
+
+h1 { font-size: 8vmin; }
+
+h2 { font-size: 2.5vmax; }
+
+h3 { font-size: 2vmax; }
+
+h4 {
+    font-size: 1vmax;
+    line-height: 1vmax;
+    height: 3vmax;
+}
+
+h5 {
+    font-size: 2vmin;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+header {
+    position: relative;
+    width: 100%;
+    height: 70vmin;
+    text-align: center;
+
+    background-image: url("https://www.afera.com/uploads/Afbeeldingen/Committees%20and%20Secretariat.jpg");
+    background-size: cover;
+    background-position-x: center;
+}
+
+header > h1 {
+    position: relative;
+    height: 38vmin;
+    padding-top: 40vmin;
+    top: 50%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    /*background: rgba(0, 74, 212, 0.486);*/
+    background: rgba(0, 0, 0, 0.5);
+    transform: translate(0, -50%);
+}
+
+menu {
+    position: sticky;
+    z-index: 10;
+    width: 100%;
+    height: 3vmax;
+    top: 0;
+    padding-top: 1vmax;
+    border-bottom: 2px solid silver;
+    background: rgb(255, 255, 255);
+
+/*
+    background: rgb(184, 26, 149);
+    color: white;
+*/
+}
+
+menu li {
+    display: inline;
+    font-size: 1.75vmax;
+    padding:  2vmax 2vmax 0 2vmax;
+}
+
+
+
+
+section {
+    position: relative;
+    width: 100%;
+    margin-top: 5vmax;
+    margin-bottom: 5vmax;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.newsMinSection {
+    align-items: center;
+    text-align: center;
+    padding-top: 1vmax;
+    background-color: #fafafa;
+}
+
+.newsMin {
+    position: relative;
+    display: inline-block;
+    margin: 0 1vmax auto;
+    padding: 0;
+    width: 13vmax;
+    height: 15vmax;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0 0 1em silver;
+}
+
+
+.newsMinPic {
+    width: 100%;
+    height: 13vmax;
+    object-fit: cover;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.newsMinCaption {
+    position: relative;
+    top: -5vmax;
+    bottom: -5vmax;
+    padding: 0.5vmax 0.5vmax 0 0.5vmax;
+    width: 12vmax;
+    height: 6vmax;
+    border-radius: 0 0 15px 15px;
+
+    text-align: left;
+    
+    color: black;
+    background: rgba(255, 255, 255, 1);
+    font-size: 0.75vmax; 
+    padding-left: 0.75vmax;
+}
+
+.newsMinLast {
+    position: relative;
+    padding: 1vmax 0.5vmax 0 0.5vmax;
+    top:-13.5vmax;
+    width: 12vmax;
+    height: 13.5vmax;
+    border-radius: 15px 15px 15px 15px;
+
+    display: flex;
+    text-align: center;
+    font-size: 1vmax;
+    align-items: center;
+    justify-content: center;
+    
+    color: black;
+    background: rgba(255, 255, 255, 1);
+    
+}
+
+
+
+
+.newsMin{
+transition: all 1s;
+}
+
+.newsMin:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 1em gold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.aboutMin {
+    /*background-color: rgba(13, 44, 90, 0.84);*/
+    /*background-color: rgba(204, 221, 253, 0.322);*/
+    align-items: center;
+    text-align: center;
+    /*color: white; */
+    color: black;
+    padding-top: 3vmax;
+}
+
+.aboutMinCnt {
+    position: relative;
+    display: inline-block;
+    margin: auto;
+    width: 30vmax;
+    padding: 2vmin;
+
+    text-align: justify;
+}
+
+.aboutMinCpt {
+    position: relative;
+    top: -5vmax;
+    padding-top: 1vmax;
+    width: 100%;
+    height: 4vmax;
+    border-radius: 0 0 15px 15px;
+
+    text-align: center;
+    /*background: rgba(26, 40, 100, 0.9);*/
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.aboutMinPic {
+    width: 100%;
+    height: 25vmax;
+    object-fit: cover;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.aboutMinTxt {
+    position: relative;
+    top: -2vmax;
+    padding: 2vmax;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0 0 1em silver;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.offerMin {
+    text-align: center;
+    padding: 2vmax;
+    background-color: #fafafa;
+}
+
+
+.offerMin > ul {
+    position: relative;
+    display: inline-block;
+    width: 40vw;
+    margin: auto;
+    border: solid silver;
+    border-width: 0 2px 0 2px ;
+}
+
+
+.offerMin > ul > li {
+    position: relative;
+    top: 0;
+    margin: 1vmax 1vmax auto;
+    width: 15vmax;
+    height: 15vmax;
+    padding: 1vmax;
+    /*color: white;
+    background: rgba(14, 128, 93, 1);*/
+    box-shadow: 0 0 1em silver;
+
+    align-self: center;
+    
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.offerMin > ul > li:hover {
+    background-color: rgb(159, 228, 255);
+}
+
+.offerMin > ul > li > p {
+    width: 15vmax;
+    height: 5vmax;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.offerMinIcn {
+    /*filter: invert(100%);*/
+    display: inline-block;
+    width: 5vmax;
+    height: 5vmax;
+}
+
+
+
+
+
+
+
+.contactMe {
+    position: relative;
+    text-align: center;
+    padding: 2vmax 0;
+    background-color: #fafafa;
+}
+
+
+
+.contactMinWay {
+    display: inline-block;
+    margin-top: 5vmax;
+    height: 12vmin;
+    width: 25vmax;
+    padding: 0 2vmax;
+    list-style-type: none;
+}
+
+
+
+.contactMinWay:nth-child(2n) {
+    transform: translate(0, -50%);
+}
+
+
+
+.scl{
+    width: 5vmax;
+}
+
+
+
+
+
+
+
+.flexis {
+    text-align: center;
+    padding: 3vmax 0;
+}
+
+.flexisList {
+    position: relative;
+    display: inline-block;
+    width: 95vw;
+    padding: 1vmax 0;
+    margin: 0 auto;
+    color: black;
+}
+
+.flexisUl {
+     list-style-type: none;
+}
+
+.flexisUl > li {
+    display: inline-block;
+    font-size: 1.5vmax;
+    font-weight: bold;
+    padding: 2vmax;
+}
+/*
+.flexis > article:nth-child(1) {
+    background: rgb(14, 128, 93, 0.9);
+}
+
+.flexis > article:nth-child(2) {
+    background: rgba(26, 40, 100, 0.9);
+}
+*/
+
+.flexisImg {
+    width: 12vmin;
+    height: 12vmin;
+}
+
+
+
+
+
+footer {
+    position: relative;
+    /*
+    background-color: rgb(14, 92, 49);
+    color: white;
+    */
+    /*background-color: #eeeeee;*/
+    border-top: 2px solid silver;
+    text-align: left;
+    padding: 2vmax 0;
+}
+
+.foot {
+    display: inline-block;
+    margin-top: 2vmax;
+    height: 10vmin;
+    width: 25vmin;
+    padding: 0 2vmax;
+    line-height: 2.5vmax;
+}
+
+.foot > ul {
+    list-style-type: none;
+}
+
+.sclMin {
+    width: 2vmax;
+}
+
+
+/* -------------------------------------------------- */
+/* NEWS */
+
+
+.news {
+    width: 90vmin;
+    height: 40vmin;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0 0 1em silver;
+    margin: auto;
+    margin-top: 5vmax;
+    margin-bottom: 5vmax;
+    font-size: 2vmin;
+}
+
+.newsPic {
+    width: 40vmin;
+    height: 40vmin;
+    margin: 0 auto;
+    border-radius: 15px 0 0 15px;
+    display: inline-block;
+}
+
+.newsCaption {
+    width: 40vmin;
+    height: 40vmin;
+    margin: 0 auto;
+    padding-left: 2vmax;
+    display: inline-block;
+    transform: translate(0, -8vmin);
+}
+
+.news:last-child {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* -------------------------------------------------- */
+/* NEWS-CONTENT */
+
+
+.newsMain {
+    width: 90vmin;
+    padding: 2vmax;
+    margin: auto;
+    margin-top: 5vmax;
+    margin-bottom: 5vmax;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0 0 1em silver;
+    font-size: 2vmin;
+}
+
+.newsImg {
+    display: block;
+    width: 80vmin;
+    height: 50vmin;
+    margin: 0 auto;
+    border-radius: 15px;
+    object-fit: cover;
+    margin-top: 2vmax;
+    margin-bottom: 2vmax;
+}
+
+/* -------------------------------------------------- */
+/* OFFER-CONTENT */
+
+.offerOne {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.offerOne > ul {
+    position: relative;
+    display: inline-block;
+    width: 40vw;
+    margin: 0 auto;
+    list-style-type: none;
+}
+
+
+
+.offerTwo {
+    text-align: center;
+    padding: 2vmax;
+    background-color: #fafafa;
+}
+
+
+.offerTwo > ul {
+    position: relative;
+    display: inline-block;
+    width: 95vw;
+    margin: auto;
+    border: solid silver;
+    border-width: 0 2px 0 2px ;
+}
+
+
+.offerTwo > ul > li {
+    position: relative;
+    top: 0;
+    margin: 1vmax 1vmax auto;
+    width: 14vmax;
+    height: 14vmax;
+    padding: 1vmax;
+    font-size: 2vmax;
+    /*color: white;
+    background: rgba(14, 128, 93, 1);*/
+    box-shadow: 0 0 1em silver;
+
+    align-self: center;
+    
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
